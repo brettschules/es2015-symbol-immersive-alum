@@ -47,6 +47,7 @@ console.log(str1 === str2) // true
 
 var sym1 = Symbol();
 var sym2 = Symbol();
+
 console.log(sym1 === sym2) // false
 ```  
 Because symbols are unique, they can be used to avoid namespace issues. For example, if a variable or object key in our code is set as a symbol; even if it is the same as a variable in another js library we are using, one will not overwrite the other, they will be seen as separate labels.
