@@ -49,20 +49,36 @@ var sym1 = Symbol();
 var sym2 = Symbol();
 console.log(sym1 === sym2) // false
 ```  
-Because symbols are unique, they can be used to avoid namespace issues. Meaning even if a variable or object key in our code is the same as another library we are using one will not overright the other, they will be seen as separate things.
+Because symbols are unique, they can be used to avoid namespace issues. For example, if a variable or object key in our code is set as a symbol; even if it is the same as a variable in another js library we are using, one will not overwrite the other, they will be seen as separate labels.
 
 Let's take a look at this by assigning a symbol as a key to an object property:
 ```javascript
-//...
-```
-...
+var members = Symbol('array of ghost busting team');
 
-### 
+var ghostBusters = {};
+
+ghostBusters[members] = ['Egon Spengler', 'Peter Venkman', 'Ray Stantz', 'Winston Zeddemore'];
+
+console.log(ghostBusters[members]); // ['Egon Spengler', 'Peter Venkman', 'Ray Stantz', 'Winston Zeddemore']
+
+console.log(members); // Symbol(array of ghost busting team)
+
+// notice that using dot notation does not overwrite our value:
+
+ghostBusters.members = ['larry', 'curly', 'moe'];
+
+console.log(ghostBusters.members); // undefined
+```  
+In the code above, you can see that we first declared our symbol called members and optionally passed a description of what this symbol is for 'array of ghost busting team'. then we created an empty object called ghostBusters. To set a symbol as a key on our object as opposed to a regular key such as "members" we need to use `[]` braces surrounding our symbol such as `ghostBusters[members]`. Notice that later if we use dot notation `ghostBusters.members` this does not refer to out symbol but a different property key.
+
+### ...
+
+...
 
 
 ## Summary
 
-- Symbols can be declared like this `var symbol = Symbol("")`
+- Symbols can be declared like this `var symbol = Symbol()`.
 
 ## Resources
 
