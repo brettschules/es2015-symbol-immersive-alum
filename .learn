@@ -1,0 +1,12 @@
+languages:
+ - javascript
+tags: 
+ - es2015
+ - es6
+ - symbol
+ - data types
+ - immutable
+ - unique
+type:
+ - readme
+resources: 1
