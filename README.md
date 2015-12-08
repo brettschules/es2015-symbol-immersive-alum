@@ -64,11 +64,10 @@ console.log(ghostBusters[members]); // ['Egon Spengler', 'Peter Venkman', 'Ray S
 
 console.log(members); // Symbol(array of ghost busting team)
 
-// notice that using dot notation does not overwrite our value:
-
-ghostBusters.members = ['larry', 'curly', 'moe'];
+// notice that using dot notation does not refer to our unique key
 
 console.log(ghostBusters.members); // undefined
+
 ```  
 In the code above, you can see that we first declared our symbol called members and optionally passed a description of what this symbol is for 'array of ghost busting team'. then we created an empty object called ghostBusters. To set a symbol as a key on our object as opposed to a regular key such as "members" we need to use `[]` braces surrounding our symbol such as `ghostBusters[members]`. Notice that later if we use dot notation `ghostBusters.members` this does not refer to out symbol but a different property key.
 
