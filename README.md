@@ -27,13 +27,7 @@ Symbols are a unique and immutable data type. This means that once created they 
 
 ### Making Symbols
 
-We can create a symbol by using the Symbol object like so `var snowflake = Symbol();`. Optionally you can also give them a string description as an argument `var snowflake = Symbol("a unique snowflake")`. This description can be used for debugging purposes, but we would not use the description string to access the symbol itself. In this case we would just refer to its var label `sym`.
-
-Let's take this snowflake for a spin:  
-```javascript
-var snowflake = Symbol();
-typeof snowflake; // 'symbol'.
-``` 
+We can create a symbol by using the Symbol object like so `var snowflake = Symbol();`. Optionally you can also give them a string description as an argument `var snowflake = Symbol("a unique snowflake")`. This description can be used for debugging purposes, but we would not use the description string to access the symbol itself. In this case to access the symbols value we would just refer to its var label `sym`.
 
 ## Uniqueness
 
