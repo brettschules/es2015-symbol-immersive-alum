@@ -11,11 +11,9 @@ In this lesson, you will get to know ES2015's new data type Symbol.
 3. Understand how to find symbol properties on an Object.
 4. Become familiar with some of Symbol's methods.
 
-## ~ ?min
-
 <!-- iframe of video lecture goes here -->
 
-*The code examples from this lesson can be run by pasting them into [Babel's online REPL](https://babeljs.io/repl/)*
+*Note: The code examples from this lesson can be run by pasting them into [Babel's online REPL](https://babeljs.io/repl/)*
 
 ## Understanding Symbols
 
@@ -142,3 +140,4 @@ We won't cover Symbol methods in this lesson, but you can refer to the complete 
 
 - [MDN - JavaScript - Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 - [Mozilla Hacks - Symbols in Depth Tutorial](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
+- [ES5 to ES6 Feature Comparison](http://es6-features.org/)
