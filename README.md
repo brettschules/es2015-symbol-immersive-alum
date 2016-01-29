@@ -141,3 +141,5 @@ We won't cover Symbol methods in this lesson, but you can refer to the complete 
 - [MDN - JavaScript - Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 - [Mozilla Hacks - Symbols in Depth Tutorial](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
 - [ES5 to ES6 Feature Comparison](http://es6-features.org/)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/es2015-symbol' title='Symbol'>Symbol</a> on Learn.co and start learning to code for free.</p>
